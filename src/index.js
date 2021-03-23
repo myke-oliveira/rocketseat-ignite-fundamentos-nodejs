@@ -2,9 +2,12 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", (request, response) => {
-  return response.json({ message: "Hello World Ignite - Fundamentos NodeJs!"})
+app.get("/courses", (request, response) => {
+  return response.json([
+    "Curso 1",
+    "Curso 2",
+    "Curso 3"
+  ])
 });
 
-// localhost:3031
 app.listen(3333);
